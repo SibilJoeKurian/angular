@@ -1,1 +1,7 @@
-<p>date works!{{message}}</p>
+<p>{{dateMessage}}</p>
+<!--<p>{{address.name}}</p>-->
+<p>{{getPhoneNumber()}}</p>
+<div *ngIf="getPhoneNumber().length">
+<p *ngFor="let phonenumber of getPhoneNumber()">{{phonenumber}}</p>
+</div>
+<div>{{passedName}}</div>
